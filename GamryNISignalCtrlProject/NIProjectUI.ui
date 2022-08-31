@@ -20,7 +20,7 @@
    <cursorShape>ArrowCursor</cursorShape>
   </property>
   <property name="windowTitle">
-   <string>Gamry Signal</string>
+   <string>National Instruments Module</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -64,7 +64,7 @@
      <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 10px;}</string>
     </property>
     <property name="text">
-     <string>Model</string>
+     <string>NI</string>
     </property>
     <property name="maxLength">
      <number>10</number>
