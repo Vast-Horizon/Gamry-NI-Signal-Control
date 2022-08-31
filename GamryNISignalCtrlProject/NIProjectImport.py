@@ -106,6 +106,7 @@ class UI(QtWidgets.QMainWindow):
     def test(self):
         with nidaqmx.Task() as task_write, nidaqmx.Task() as task_read: 
             #adding the analog channels to read/write to the task
+            str = self.INdevname_1.text()
             task_write.ao_channels.add_ao_voltage_chan("cDAQ1Mod1/ao0")#------ User Input-----------#
             task_read.ai_channels.add_ai_voltage_chan("cDAQ2Mod1/ai0") #------ User Input-----------#
             task_read.ai_channels.add_ai_voltage_chan("cDAQ2Mod1/ai1") #------ User Input-----------#

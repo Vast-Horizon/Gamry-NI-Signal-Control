@@ -969,7 +969,7 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 1</string>
+           <string> Input 2</string>
           </property>
          </widget>
         </item>
@@ -1256,6 +1256,31 @@ QCheckBox::indicator:unchecked {
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <layout class="QGridLayout" name="gridLayout_4">
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="Outdevname_10">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>10</number>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
         <item row="1" column="1">
          <widget class="QLineEdit" name="Outdevname_2">
           <property name="enabled">
@@ -1328,69 +1353,6 @@ QCheckBox::indicator:unchecked {
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QCheckBox" name="checkBox_11">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QCheckBox" name="checkBox_10">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="0">
-         <widget class="QCheckBox" name="checkBox_12">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QCheckBox" name="checkBox_15">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QCheckBox" name="checkBox_16">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="0">
-         <widget class="QCheckBox" name="checkBox_13">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QCheckBox" name="checkBox_14">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QCheckBox" name="checkBox_17">
-          <property name="text">
-           <string>CheckBox</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="0">
-         <widget class="QCheckBox" name="checkBox_18">
-          <property name="text">
-           <string>CheckBox</string>
           </property>
          </widget>
         </item>
@@ -1544,35 +1506,293 @@ QCheckBox::indicator:unchecked {
           </property>
          </widget>
         </item>
-        <item row="9" column="1">
-         <widget class="QLineEdit" name="Outdevname_10">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_1">
           <property name="font">
            <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
           </property>
           <property name="text">
-           <string/>
+           <string> Input 1</string>
           </property>
-          <property name="maxLength">
-           <number>10</number>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_2">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
           </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_3">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_4">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_5">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_6">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_7">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_8">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QCheckBox" name="CheckBox_out_9">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
+          <property name="text">
+           <string> Input 1</string>
           </property>
          </widget>
         </item>
         <item row="9" column="0">
-         <widget class="QCheckBox" name="checkBox_20">
+         <widget class="QCheckBox" name="CheckBox_out_10">
+          <property name="font">
+           <font>
+            <family>Calibri Light</family>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox::indicator {
+    width:  10px;
+    height:  10px;
+    border-radius:  3px;
+}
+QCheckBox::indicator:checked {
+    background-color: rgb(50, 200, 50);
+    border: 2px inset grey;
+}
+QCheckBox::indicator:unchecked {
+    background-color:       white;
+    border:  2px inset grey;
+}
+</string>
+          </property>
           <property name="text">
-           <string>CheckBox</string>
+           <string> Input 1</string>
           </property>
          </widget>
         </item>
