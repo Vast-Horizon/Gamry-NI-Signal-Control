@@ -1,3 +1,6 @@
+'''
+Created on Aug 15 2022
+'''
 __author__ = "Fiavi(Zhaoen) Yang"
 #Github: https://github.com/Vast-Horizon/Gamry-Signal-Generator-Python3
 
@@ -76,6 +79,7 @@ class UI(QtWidgets.QMainWindow):
         self.progressBar.setValue(0)   
         #Check if the default signal file exist
         if os.path.isfile(fpath) == False:
+            print("=============================================================\n")
             print("The default signal file"+fpath+"does not appear to exist in current directory. Please select an input file.") 
             self.signalPathlabel.setText("Please select an input signal data file")
         else:

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1355</width>
+    <width>1379</width>
     <height>786</height>
    </rect>
   </property>
@@ -95,9 +95,9 @@
    <widget class="QLabel" name="logo">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>30</y>
-      <width>391</width>
+      <x>820</x>
+      <y>60</y>
+      <width>401</width>
       <height>131</height>
      </rect>
     </property>
@@ -214,8 +214,8 @@ border-left-style: double;
    <widget class="QLineEdit" name="FrequencyInput">
     <property name="geometry">
      <rect>
-      <x>23</x>
-      <y>273</y>
+      <x>30</x>
+      <y>280</y>
       <width>152</width>
       <height>31</height>
      </rect>
@@ -238,54 +238,11 @@ border-left-style: double;
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QSpinBox" name="spinBox">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>270</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::WheelFocus</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSpinBox {border: 1px solid gray;border-radius: 8px;}
-QSpinBox::down-button{border: 0px solid  gray; border-radius: 3px; margin: 1.5px;
-height:9; background-color:rgb(220, 255, 210);}
-QSpinBox::up-button{border: 0px solid gray; border-radius: 3px; margin: 1.5px;
-height:9; background-color:rgb(220, 255, 210)}</string>
-    </property>
-    <property name="wrapping">
-     <bool>false</bool>
-    </property>
-    <property name="frame">
-     <bool>true</bool>
-    </property>
-    <property name="buttonSymbols">
-     <enum>QAbstractSpinBox::UpDownArrows</enum>
-    </property>
-    <property name="accelerated">
-     <bool>false</bool>
-    </property>
-    <property name="showGroupSeparator" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="minimum">
-     <number>1</number>
-    </property>
-   </widget>
    <widget class="QLabel" name="Fqlabel">
     <property name="geometry">
      <rect>
-      <x>23</x>
-      <y>245</y>
+      <x>30</x>
+      <y>250</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -300,25 +257,6 @@ height:9; background-color:rgb(220, 255, 210)}</string>
      <string>Freq. [KHz]:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="RpeatsLabel">
-    <property name="geometry">
-     <rect>
-      <x>182</x>
-      <y>245</y>
-      <width>48</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Calibri</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Cycles:</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="conditionEdit">
     <property name="enabled">
      <bool>true</bool>
@@ -326,7 +264,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>270</y>
+      <y>280</y>
       <width>141</width>
       <height>31</height>
      </rect>
@@ -405,8 +343,8 @@ height:9; background-color:rgb(220, 255, 210)}</string>
    <widget class="QLabel" name="ConditionLabel">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>245</y>
+      <x>490</x>
+      <y>250</y>
       <width>72</width>
       <height>21</height>
      </rect>
@@ -424,9 +362,9 @@ height:9; background-color:rgb(220, 255, 210)}</string>
    <widget class="QLineEdit" name="ampInput">
     <property name="geometry">
      <rect>
-      <x>341</x>
-      <y>273</y>
-      <width>131</width>
+      <x>270</x>
+      <y>280</y>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
@@ -448,10 +386,10 @@ height:9; background-color:rgb(220, 255, 210)}</string>
    <widget class="QLabel" name="ampLabel">
     <property name="geometry">
      <rect>
-      <x>341</x>
-      <y>245</y>
-      <width>46</width>
-      <height>21</height>
+      <x>270</x>
+      <y>250</y>
+      <width>51</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
@@ -499,128 +437,13 @@ height:9; background-color:rgb(220, 255, 210)}</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>10</y>
-      <width>671</width>
-      <height>711</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="OutSigLabel">
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-weight: bold}</string>
-       </property>
-       <property name="text">
-        <string>Input Signal vs Time [s]</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PlotWidget" name="graphicsView">
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="MeasuredcurLabel">
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-weight: bold}</string>
-       </property>
-       <property name="text">
-        <string>A01 [V] vs Time [s]</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PlotWidget" name="graphicsView_2"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="MeasuredVLabel">
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-weight: bold}</string>
-       </property>
-       <property name="text">
-        <string>A02 [V] vs Time [s]</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PlotWidget" name="graphicsView_3"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="MeasuredVLabel_2">
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-weight: bold}</string>
-       </property>
-       <property name="text">
-        <string>A03 [V] vs Time [s]</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="PlotWidget" name="graphicsView_4"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
-      <x>19</x>
-      <y>379</y>
-      <width>261</width>
-      <height>271</height>
+      <x>90</x>
+      <y>390</y>
+      <width>251</width>
+      <height>281</height>
      </rect>
     </property>
     <property name="font">
@@ -648,7 +471,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
      <enum>QFrame::Plain</enum>
     </property>
     <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarAsNeeded</enum>
     </property>
     <property name="widgetResizable">
      <bool>true</bool>
@@ -658,38 +481,13 @@ height:9; background-color:rgb(220, 255, 210)}</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>240</width>
-       <height>337</height>
+       <width>251</width>
+       <height>281</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="5" column="1">
-         <widget class="QLineEdit" name="INdevname_6">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="1">
          <widget class="QLineEdit" name="INdevname_2">
           <property name="enabled">
@@ -698,17 +496,17 @@ height:9; background-color:rgb(220, 255, 210)}</string>
           <property name="font">
            <font>
             <family>Calibri</family>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
            <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
           </property>
           <property name="text">
-           <string/>
+           <string>AI1</string>
           </property>
           <property name="maxLength">
-           <number>10</number>
+           <number>100</number>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -723,7 +521,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
           <property name="font">
            <font>
             <family>Calibri</family>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -733,7 +531,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
            <string/>
           </property>
           <property name="maxLength">
-           <number>10</number>
+           <number>100</number>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -748,7 +546,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
           <property name="font">
            <font>
             <family>Calibri</family>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -758,57 +556,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
            <string/>
           </property>
           <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="1">
-         <widget class="QLineEdit" name="INdevname_9">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="1">
-         <widget class="QLineEdit" name="INdevname_8">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
+           <number>100</number>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -823,7 +571,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
           <property name="font">
            <font>
             <family>Calibri</family>
-            <pointsize>10</pointsize>
+            <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -833,7 +581,7 @@ height:9; background-color:rgb(220, 255, 210)}</string>
            <string/>
           </property>
           <property name="maxLength">
-           <number>10</number>
+           <number>100</number>
           </property>
           <property name="clearButtonEnabled">
            <bool>true</bool>
@@ -848,99 +596,20 @@ height:9; background-color:rgb(220, 255, 210)}</string>
           <property name="font">
            <font>
             <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QLineEdit" name="INdevname_7">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="1">
-         <widget class="QLineEdit" name="INdevname_10">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_1">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
             <pointsize>9</pointsize>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
+           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
           </property>
           <property name="text">
-           <string> Input 1</string>
+           <string>AI0</string>
+          </property>
+          <property name="maxLength">
+           <number>100</number>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -969,7 +638,10 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 2</string>
+           <string>AI1</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -998,36 +670,7 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_4">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
+           <string>AI2</string>
           </property>
          </widget>
         </item>
@@ -1056,12 +699,12 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 1</string>
+           <string>AI4</string>
           </property>
          </widget>
         </item>
-        <item row="5" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_6">
+        <item row="3" column="0">
+         <widget class="QCheckBox" name="CheckBox_in_4">
           <property name="font">
            <font>
             <family>Calibri Light</family>
@@ -1085,12 +728,12 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 1</string>
+           <string>AI3</string>
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_7">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="CheckBox_in_1">
           <property name="font">
            <font>
             <family>Calibri Light</family>
@@ -1114,94 +757,10 @@ QCheckBox::indicator:unchecked {
 </string>
           </property>
           <property name="text">
-           <string> Input 1</string>
+           <string>AI0</string>
           </property>
-         </widget>
-        </item>
-        <item row="7" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_8">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_9">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="0">
-         <widget class="QCheckBox" name="CheckBox_in_10">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -1213,9 +772,9 @@ QCheckBox::indicator:unchecked {
    <widget class="QScrollArea" name="scrollArea_2">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>450</x>
       <y>380</y>
-      <width>261</width>
+      <width>81</width>
       <height>271</height>
      </rect>
     </property>
@@ -1239,7 +798,7 @@ QCheckBox::indicator:unchecked {
      <enum>QFrame::Plain</enum>
     </property>
     <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarAlwaysOff</enum>
     </property>
     <property name="widgetResizable">
      <bool>true</bool>
@@ -1249,273 +808,21 @@ QCheckBox::indicator:unchecked {
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>240</width>
-       <height>337</height>
+       <width>81</width>
+       <height>271</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <layout class="QGridLayout" name="gridLayout_4">
-        <item row="9" column="1">
-         <widget class="QLineEdit" name="Outdevname_10">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QLineEdit" name="Outdevname_2">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLineEdit" name="Outdevname_1">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLineEdit" name="Outdevname_3">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="1">
-         <widget class="QLineEdit" name="Outdevname_4">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="QLineEdit" name="Outdevname_5">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="1">
-         <widget class="QLineEdit" name="Outdevname_6">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="1">
-         <widget class="QLineEdit" name="Outdevname_8">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="1">
-         <widget class="QLineEdit" name="Outdevname_9">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QLineEdit" name="Outdevname_7">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="font">
-           <font>
-            <family>Calibri</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 5px;}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="maxLength">
-           <number>10</number>
-          </property>
-          <property name="clearButtonEnabled">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_1">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
+       <widget class="QCheckBox" name="CheckBox_out_1">
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
     width:  10px;
     height:  10px;
     border-radius:  3px;
@@ -1529,22 +836,25 @@ QCheckBox::indicator:unchecked {
     border:  2px inset grey;
 }
 </string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_2">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
+        </property>
+        <property name="text">
+         <string>AO0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="CheckBox_out_2">
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
     width:  10px;
     height:  10px;
     border-radius:  3px;
@@ -1558,22 +868,22 @@ QCheckBox::indicator:unchecked {
     border:  2px inset grey;
 }
 </string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_3">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
+        </property>
+        <property name="text">
+         <string>AO1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="CheckBox_out_3">
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
     width:  10px;
     height:  10px;
     border-radius:  3px;
@@ -1587,22 +897,22 @@ QCheckBox::indicator:unchecked {
     border:  2px inset grey;
 }
 </string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_4">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
+        </property>
+        <property name="text">
+         <string>AO2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="CheckBox_out_4">
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
     width:  10px;
     height:  10px;
     border-radius:  3px;
@@ -1616,22 +926,22 @@ QCheckBox::indicator:unchecked {
     border:  2px inset grey;
 }
 </string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_5">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
+        </property>
+        <property name="text">
+         <string>AO3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="CheckBox_out_5">
+        <property name="font">
+         <font>
+          <family>Calibri Light</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox::indicator {
     width:  10px;
     height:  10px;
     border-radius:  3px;
@@ -1645,158 +955,11 @@ QCheckBox::indicator:unchecked {
     border:  2px inset grey;
 }
 </string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_6">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_7">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_8">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_9">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="0">
-         <widget class="QCheckBox" name="CheckBox_out_10">
-          <property name="font">
-           <font>
-            <family>Calibri Light</family>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox::indicator {
-    width:  10px;
-    height:  10px;
-    border-radius:  3px;
-}
-QCheckBox::indicator:checked {
-    background-color: rgb(50, 200, 50);
-    border: 2px inset grey;
-}
-QCheckBox::indicator:unchecked {
-    background-color:       white;
-    border:  2px inset grey;
-}
-</string>
-          </property>
-          <property name="text">
-           <string> Input 1</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+        </property>
+        <property name="text">
+         <string>AO4</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -1804,8 +967,8 @@ QCheckBox::indicator:unchecked {
    <widget class="QLabel" name="InDevlabel">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>350</y>
+      <x>180</x>
+      <y>370</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -1823,8 +986,8 @@ QCheckBox::indicator:unchecked {
    <widget class="QLabel" name="OutDevlabel">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>350</y>
+      <x>440</x>
+      <y>370</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -1837,6 +1000,136 @@ QCheckBox::indicator:unchecked {
     </property>
     <property name="text">
      <string>Output Devices</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wrtname_edit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>168</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 10px;}</string>
+    </property>
+    <property name="text">
+     <string>cDAQ1Mod1</string>
+    </property>
+    <property name="maxLength">
+     <number>100</number>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="objNamelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Writing Device Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="readname_edit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>100</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {border: 1px solid gray;border-radius: 10px;}</string>
+    </property>
+    <property name="text">
+     <string>cDAQ2Mod1</string>
+    </property>
+    <property name="maxLength">
+     <number>100</number>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="objNamelabel_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reading Device Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OutSigLabel">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>260</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{font-weight: bold}</string>
+    </property>
+    <property name="text">
+     <string>Input Signal vs Time [s]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QWidget" name="">
@@ -1946,8 +1239,8 @@ QPushButton:pressed{background-color:rgb(115, 230, 0);}</string>
    <widget class="QSpinBox" name="outChannelNumspinBox">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>310</y>
+      <x>580</x>
+      <y>330</y>
       <width>41</width>
       <height>22</height>
      </rect>
@@ -2008,8 +1301,8 @@ height:9; background-color:rgb(220, 255, 210)}</string>
    <widget class="QSpinBox" name="InChannelNumspinBox">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>310</y>
+      <x>230</x>
+      <y>330</y>
       <width>41</width>
       <height>22</height>
      </rect>
@@ -2047,12 +1340,15 @@ height:9; background-color:rgb(220, 255, 210)}</string>
     <property name="minimum">
      <number>1</number>
     </property>
+    <property name="value">
+     <number>2</number>
+    </property>
    </widget>
    <widget class="QLabel" name="InChanlabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>310</y>
+      <x>20</x>
+      <y>330</y>
       <width>201</width>
       <height>21</height>
      </rect>
@@ -2070,8 +1366,8 @@ height:9; background-color:rgb(220, 255, 210)}</string>
    <widget class="QLabel" name="OutChanlabel">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>310</y>
+      <x>360</x>
+      <y>330</y>
       <width>211</width>
       <height>21</height>
      </rect>
@@ -2086,13 +1382,26 @@ height:9; background-color:rgb(220, 255, 210)}</string>
      <string>Number of Output Channels:</string>
     </property>
    </widget>
+   <widget class="PlotWidget" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>310</y>
+      <width>641</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1355</width>
+     <width>1379</width>
      <height>26</height>
     </rect>
    </property>
