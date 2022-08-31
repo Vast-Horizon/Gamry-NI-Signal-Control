@@ -1,10 +1,12 @@
 import GamrySignalImport
+import NIProjectImport
 
 def main():
-    if 1==1:
+    num = int(input("num: "))
+    if num==1:
         GamrySignalImport.mainfunc()
-    elif 1>2:
-        pass
+    elif num==2:
+        NIProjectImport.mainfunc()
 
 if __name__ == "__main__":
     main()
